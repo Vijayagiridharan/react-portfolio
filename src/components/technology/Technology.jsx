@@ -1,37 +1,37 @@
 import React from 'react';
-import './Services.css';
-import Image1 from '../../assets/service-1.svg'
-import Image2 from '../../assets/service-2.svg'
-import Image3 from '../../assets/service-3.svg'
+import './Technology.css';
+import Image1 from '../../assets/framework.png'
+import Image2 from '../../assets/database.svg'
+import Image3 from '../../assets/tools.svg'
 
 const data = [
     {
         id: 1,
         image: Image1,
-        title: "Responsive design",
+        title: "Frameworks & Libraries",
         description:
-            "Ensuring that the website/mobile app is responsive across all platforms",
+            "React, React Native, Redux, Spring Boot, Flask, Node.js, Express.js",
     },
     {
         id: 2,
         image: Image2,
-        title: "Web Development",
+        title: "Databases",
         description:
-            "Ensuring that that a website meets the correct standards, and also ensuring it's well maintained",
+            "MySQL, MongoDB, PostgreSQ",
     },
     {
         id: 3,
         image: Image3,
-        title: "Mobile Development",
+        title: "Tools & Platforms",
         description:
-            "Ensuring that a mobile app meets the correct standards, and also ensuring it's well maintained",
+            "Git, Postman, Jenkins, Docker, Gradle, Ubuntu/Linux",
     },
 ];
 
-const Services = () => {
+const Technology = () => {
     return (
         <section className="services container section" id="services">
-            <h2 className="section__title">Services</h2>
+            <h2 className="section__title">Technologies</h2>
 
             <div className="services__container grid">
                 {data.map(({ id, image, title, description }) => {
@@ -49,4 +49,4 @@ const Services = () => {
     )
 }
 
-export default Services
+export default Technology

@@ -1,21 +1,20 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
-import Logo from "../../assets/logo.svg";
-import LightLogo from "../../assets/light-logo.svg";
+import Logo from "../../assets/vj-logo-dark-navy.svg";
+import LightLogo from "../../assets/vj-logo-light.svg";
 
 import {
-    RiHome2Line,
-    RiUser3Line,
-    RiBriefcase2Line,
-    RiStackLine,
-    RiDraftLine,
-    RiChat3Line,
-    RiFileList3Line,
+    RiHomeLine,
+    RiUserLine,
+    RiSchoolLine,
+    RiCodeBoxLine,
+    RiBriefcaseLine,
+    RiFolderLine,
+    RiMailLine,
     RiMoonLine,
     RiSunLine,
     RiMenu2Line,
 } from "react-icons/ri";
-
 
 const Sidebar = (props) => {
     const [toggle, showMenu] = useState(false);
@@ -32,43 +31,43 @@ const Sidebar = (props) => {
                         <ul className="nav__list">
                             <li className="nav__item">
                                 <a href="#home" className="nav__link">
-                                    <RiHome2Line />
+                                    <RiHomeLine /> 
                                 </a>
                             </li>
 
                             <li className="nav__item">
                                 <a href="#about" className="nav__link">
-                                    <RiUser3Line />
+                                    <RiUserLine /> 
                                 </a>
                             </li>
 
                             <li className="nav__item">
-                                <a href="#services" className="nav__link">
-                                    <RiFileList3Line />
+                                <a href="#education" className="nav__link">
+                                    <RiSchoolLine /> 
                                 </a>
                             </li>
 
                             <li className="nav__item">
-                                <a href="#resume" className="nav__link">
-                                    <RiBriefcase2Line />
+                                <a href="#technologies" className="nav__link">
+                                    <RiCodeBoxLine /> 
                                 </a>
                             </li>
 
                             <li className="nav__item">
-                                <a href="#portfolio" className="nav__link">
-                                    <RiStackLine />
+                                <a href="#experience" className="nav__link">
+                                    <RiBriefcaseLine /> 
                                 </a>
                             </li>
 
                             <li className="nav__item">
-                                <a href="#blog" className="nav__link">
-                                    <RiDraftLine />
+                                <a href="#projects" className="nav__link">
+                                    <RiFolderLine /> 
                                 </a>
                             </li>
 
                             <li className="nav__item">
                                 <a href="#contact" className="nav__link">
-                                    <RiChat3Line />
+                                    <RiMailLine /> 
                                 </a>
                             </li>
                         </ul>

@@ -6,24 +6,43 @@
   justify-content: center;
 }
 
+/* .intro {
+  max-width: 540px;
+  text-align: center;
+  z-index: 10;
+} */
+
 .intro {
   max-width: 540px;
   text-align: center;
   z-index: 10;
+  padding: 100px 80px; /* Adds space inside the box */
+  border: 3px solid rgb(238, 229, 237); /* Creates the red border */
+  border-radius: 15px; /* Rounds the corners */
+  box-shadow: 10px 10px 25px rgba(10, 10, 217, 0.5);
+  
+  /* Background color inside the box */
+  background-color: rgba(255, 255, 255, 0.8); 
+  
 }
+
 
 .home__img {
   margin-bottom: 1.5rem;
 }
 
 .home__name {
+  color: #1a1a72;
   font-size: var(--h1-font-size);
   font-weight: var(--font-bold);
   margin-bottom: 0.5rem;
 }
 
 .home__socials {
+  
   display: flex;
+  align-items: center;
+  justify-content: center;
   column-gap: 1.75rem;
   margin: 1.5rem 0;
 }
@@ -91,6 +110,7 @@
   animation: ani-mouse 2s linear infinite;
 }
 
+
 .shapes {
   position: absolute;
   left: 0;
@@ -157,3 +177,5 @@
   bottom: 10%;
   right: 2%;
 }
+
+
