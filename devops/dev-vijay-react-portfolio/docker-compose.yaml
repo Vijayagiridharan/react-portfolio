@@ -4,7 +4,7 @@ services:
   crypto:
     build:
       context: $PWD/../..
-      dockerfile: $PWD/vijay-portfolio/Dockerfile
+      dockerfile: $PWD/vijay-react-portfolio/Dockerfile
     volumes:
       - ../../src:/app/src
     ports:
