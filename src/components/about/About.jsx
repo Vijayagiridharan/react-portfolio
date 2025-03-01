@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import Image from '../../assets/fotor-20250206191430.png';
+import Image from '../../assets/vijayimage.png';
 import Resume from '../../assets/resume.pdf';
 import AboutBox from './AboutBox';
 
