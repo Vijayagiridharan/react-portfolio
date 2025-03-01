@@ -5,8 +5,7 @@ const WorkExperience = [
         company: "Eva Eco Systems Inc",
         yearsActive: "Feb 2025 – Present",
         information: [
-            "Developed the frontend of Park My Ride, a parking booking platform for Android mobile devices and smartwatches, using React Native.",
-            "Designed and integrated backend APIs with Django, ensuring seamless functionality, performance, and scalability."
+            "Developed the frontend of Park My Ride using React Native, enhancing UI responsiveness and user engagement.", "Integrated multiple React Native screens with Django-based APIs and PostgreSQL for faster data retrieval.", "Improved backend performance and scalability on AWS LightSail by optimizing API response times. Designed a microservices-based backend using Docker and Kubernetes for better system scalability."
         ],
     },
     {
@@ -22,12 +21,13 @@ const WorkExperience = [
     },
     {
         id: 3,
-        title: "Programmer Analyst Trainee (Internship)",
+        title: "Software Engineer (MEAN Stack)",
         company: "Cognizant Technology Solutions",
-        yearsActive: "Nov 2022 – Mar 2023 (5 months)",
+        yearsActive: "Nov 2022 – Mar 2023",
         information: [
-            "Spearheaded web development projects, leveraging Angular, MongoDB, Node.js, Bootstrap, JavaScript, and TypeScript to develop scalable and high-performing applications.",
-            "Collaborated with cross-functional teams to ensure seamless communication and efficient project delivery."
+            "Built complete web applications using MongoDB, Express.js, Angular, and Node.js stack, implementing secure authentication and payment processing with JWT and Stripe API.",
+            "Optimized backend API design, improving data retrieval by 35%, and enhanced frontend performance through lazy loading and caching, reducing page load times by 50%.",
+             "Established CI/CD pipelines for automated deployments, while effectively managing project workflows with Git, Jira and Agile methodologies to ensure efficient collaboration."
         ],
     },
 ];

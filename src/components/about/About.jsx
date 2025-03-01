@@ -20,7 +20,7 @@ const About = () => {
                 <div className="about__data grid">
                     <div className="about__info">
                         <p className="about__description">
-                        Hey there! I'm Vijay, a Master's student in Computer Science at Purdue University Fort Wayne. I'm passionate about leveraging technology to create innovative and scalable solutions.  Fast forward to today, and my journey has been an exciting mix of software development, web technologies, and cybersecurity. I thrive in dynamic environments where I can solve real-world challenges through code. Over the years, I’ve honed my skills in full-stack development, cybersecurity, and software engineering best practices. 
+                        Hey there! I'm Vijayagiridharan Subramanian, an aspiring Software Engineer and Master's student in Computer Science at Purdue University Fort Wayne. I specialize in full-stack development, cloud computing, and cybersecurity, building scalable and high-performance applications.With expertise in React, Node.js, Django, and DevOps tools like Docker, I thrive on solving complex challenges through code. Passionate about innovation, I enjoy creating efficient, user-centric solutions while collaborating in Agile environments.
                         </p>
                         {/* <ul className="about__list">
                             

@@ -1,9 +1,9 @@
 version: "3.6"
 services:
-  gregsithole-react-portfolio:
+  vijay-portfolio:
     build:
       context: $PWD/../..
-      dockerfile: $PWD/gregsithole-react-portfolio/Dockerfile
+      dockerfile: $PWD/vijay-portfolio/Dockerfile
     restart: always
     expose:
       - "80"
@@ -20,9 +20,9 @@ services:
     expose:
       - 80
     depends_on:
-      - gregsithole-react-portfolio
+      - vijay-portfolio
     links:
-      - gregsithole-react-portfolio
+      - vijay-portfolio
 
 networks:
   default:

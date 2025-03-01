@@ -70,10 +70,14 @@ const Portfolio = () => {
 
 								{/* Skills Section */}
 														
-								<div className="portfolio__skills">
+								{/* <div className="portfolio__skills">
 									<strong>Skills:</strong> {elem.skills.join(" · ")}
-								</div>
+								</div> */}
 
+                                <div className="portfolio__skills" style={{ color: '#333' }}>
+                                    <strong style={{ color: '#3d004e' }}>Skills:</strong> {elem.skills.join(', ')}
+                                </div>
+ 
 
 
                                 <div className="portfolio__buttons">

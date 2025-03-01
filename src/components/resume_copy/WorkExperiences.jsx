@@ -1,7 +1,7 @@
 const WorkExperiences = [
     {
         id: 1,
-        degree: "Master of Science in Computer Science",
+        title: "Master of Science in Computer Science",
         company: "Purdue University Fort Wayne",
         yearsActive: "Aug 2023 – May 2025",
         information: [
@@ -17,7 +17,7 @@ const WorkExperiences = [
     },
     {
         id: 2,
-        degree: "Bachelor of Engineering in Electronics and Communication Engineering",
+        title: "Bachelors in Electronics and Communication Engineering",
         company: "Sri Sairam Engineering College, Chennai",
         yearsActive: "Aug 2018 – May 2022",
         information: [

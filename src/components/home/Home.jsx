@@ -12,7 +12,8 @@ const Home = () => {
                 {/* <img src={Me} alt="" className='home__img' width='200' /> */}
                 <h1 className="home__name">Vijayagiridharan</h1>
                 <h1 className="home__name">Subramanian</h1>
-                <span className="home__education">I'm a Software Engineer</span>
+                {/* <span className="home__education">I'm a Software Engineer</span> */}
+                <span className="home__education">I'm a <span className="highlight">Software Engineer</span></span>
 
                 <HeaderSocials />
 

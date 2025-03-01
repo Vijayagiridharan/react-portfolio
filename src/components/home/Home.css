@@ -179,3 +179,59 @@
 }
 
 
+
+/* Standout color for job title */
+.highlight {
+  color: #dd1f3f;
+}
+
+
+/* For the name text - change from black to white */
+body.dark-mode .home__name,
+.dark-mode .home__name,
+html.dark-mode .home__name {
+  color: #ffffff !important; /* Changed from #0a0909 to white */
+}
+
+
+/* Make the "Software Engineer" text properly styled */
+.home__education {
+  color: #0e0a0a; /* Default light color for text */
+}
+
+/* Add styling for specific text and contrast against the light card */
+.intro {
+  background-color: rgba(240, 240, 240, 0.9); /* Slightly more opaque */
+}
+
+/* If your site has a dark theme toggle, make sure these override styles work */
+html[data-theme='dark'] .home__social-link,
+body.dark-theme .home__social-link,
+.dark-theme .home__social-link {
+  color: #a92020 !important;
+}
+
+/* Set specific colors for social icons that don't change with theme */
+.home__social-link {
+  /* Use a specific color that works on both light and dark backgrounds */
+  color: #210f7d !important; /* A medium blue that should be visible on both */
+  font-size: 1.5rem !important; /* Larger size for better visibility */
+  transition: transform 0.3s ease, opacity 0.3s ease !important; /* Keep transitions but not for color */
+}
+
+/* For hover effects, change something other than color */
+.home__social-link:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+  /* Don't change the color on hover */
+}
+
+/* Override any dark mode or light mode specific styles */
+.dark-mode .home__social-link,
+.light-mode .home__social-link,
+body.dark-mode .home__social-link,
+body.light-mode .home__social-link,
+html.dark-mode .home__social-link,
+html.light-mode .home__social-link {
+  color: #11131a !important; /* Same color as above */
+}
