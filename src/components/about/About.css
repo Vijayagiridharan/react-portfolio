@@ -147,6 +147,9 @@
   .about__container {
     grid-template-columns: 350px;
   }
+  .section__title {
+    text-align: center;
+  }
 
   .about__data::before {
     left: 47%;
@@ -162,11 +165,19 @@
     row-gap: 1.5rem;
     justify-content: center;
   }
+  .about__img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .about__container {
     grid-template-columns: 320px;
+  }
+  .about__img {
+    width: 60%;
   }
 }
 
@@ -178,5 +189,8 @@
   .about__boxes {
     grid-template-columns: 1fr;
     align-items: center;
+  }
+  .about__img {
+    width: 50%;
   }
 }

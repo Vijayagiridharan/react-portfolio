@@ -1,0 +1,145 @@
+.services__container {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.875rem;
+}
+
+.services__card {
+  text-align: center;
+  padding: 1.875rem;
+  border-radius: var(--border-radius);
+  background-color: var(--container-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.services__card:hover {
+  transform: translateY(-10px);
+}
+
+.services__card:nth-child(1) {
+  background-color: rgb(108, 108, 229);
+  box-shadow: 0 5px 20px 0 rgb(108, 108, 229 / 50%);
+}
+
+.services__card:nth-child(2) {
+  background-color: rgb(249, 215, 76);
+  box-shadow: 0 5px 20px 0 rgb(249, 215, 76 / 50%);
+}
+
+.services__card:nth-child(3) {
+  background-color: rgb(249, 123, 139);
+  box-shadow: 0 5px 20px 0 rgb(249, 123, 139 / 50%);
+}
+
+.services__img {
+  margin-bottom: 1.25rem;
+}
+
+.services__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.services__description {
+  color: #f8f9fa;
+}
+
+.services__card:nth-child(2) .services__title {
+  color: var(--title-color);
+}
+
+.services__card:nth-child(2) .services__description {
+  color: var(--title-color);
+}
+
+[data-theme="dark"] .services__card:nth-child(2) .services__title,
+[data-theme="dark"] .services__card:nth-child(2) .services__description {
+  color: var(--body-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .services__container {
+    grid-template-columns: repeat(2, 330px);
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services__container {
+    grid-template-columns: 310px;
+    justify-content: center;
+    row-gap: 1.5rem;
+  }
+  
+  .services__card {
+    padding: 1.25rem;
+    /* Improve touch targets */
+    min-height: 44px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+  }
+  
+  /* Remove hover effect on touch devices and replace with active state */
+  .services__card:hover {
+    transform: none;
+  }
+  
+  .services__card:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+  }
+  
+  .services__img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 0.75rem;
+  }
+  
+  .services__title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .services__description {
+    font-size: 0.875rem;
+    /* Add padding to description text for easier touch selection */
+    padding: 4px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services__container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  
+  .services__card {
+    padding: 1rem 1.25rem;
+    /* More space between stacked cards for better touch distinction */
+    margin-bottom: 0.75rem;
+  }
+  
+  .services__img {
+    width: 55px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .services__container {
+    grid-template-columns: 1fr;
+  }
+  
+  .services__card {
+    padding: 0.875rem 1rem;
+  }
+  
+  .services__title {
+    font-size: 0.9rem;
+  }
+  
+  .services__description {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+}

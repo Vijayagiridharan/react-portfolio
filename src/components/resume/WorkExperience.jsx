@@ -1,64 +1,33 @@
 const WorkExperience = [
     {
         id: 1,
-        title: "Software Engineer",
-        company: "Kurtosys",
-        yearsActive: "January 2022 - Present",
+        title: "Full Stack Developer (Internship)",
+        company: "Eva Eco Systems Inc",
+        yearsActive: "Feb 2025 – Present",
         information: [
-            "Write modern, performant, maintainable code for a diverse array of internal projects",
-            "Communicate with multi-disciplinary teams of engineers, team leads, and QA Engineers on a daily basis",
+            "Developed the frontend of Park My Ride using React Native, enhancing UI responsiveness and user engagement.", "Integrated multiple React Native screens with Django-based APIs and PostgreSQL for faster data retrieval.", "Improved backend performance and scalability on AWS LightSail by optimizing API response times. Designed a microservices-based backend using Docker and Kubernetes for better system scalability."
         ],
     },
     {
         id: 2,
-        title: "Junior Software Developer",
-        company: "Entrostat",
-        yearsActive: "May 2017 - December 2021",
+        title: "Special Events Coordinator (Part-time)",
+        company: "Purdue University Fort Wayne",
+        yearsActive: "Mar 2024 – Present",
+        location: "Fort Wayne, Indiana (On-site)",
         information: [
-            "Improved and optimized the company's website for a seamless customer experience",
-            "Created, communicated, and managed project plans & project timelines",
-            "Worked to continually meet the expectation of our clients",
+            "Coordinating and overseeing the setup of small- and large-scale events on campus, ensuring alignment with event plans and achieving optimal configurations through effective teamwork.",
+            "Serving as the primary hospitality liaison for clients, managing all aspects of event execution to ensure seamless and successful outcomes."
         ],
     },
     {
         id: 3,
-        title: "Junior Software Developer",
-        company: "Empire State",
-        yearsActive: "Feburary 2016 - April 2017",
+        title: "Software Engineer (MEAN Stack)",
+        company: "Cognizant Technology Solutions",
+        yearsActive: "Nov 2022 – Mar 2023",
         information: [
-            "Planned, developed, tested, deployed, and maintained web applications and mobile applications",
-            "Worked well independently and on a team to solve problems."
-        ],
-    },
-    {
-        id: 4,
-        title: "Software Development Intern",
-        company: "The Digital Academy",
-        yearsActive: "Novembe 2015 - January 2016",
-        information: [
-            "Served as a dedicated and supportive Intern in a fast-paced environment",
-            "Worked to solve complex problems using the latest in Mobile and Web Technologies.",
-        ],
-    },
-    {
-        id: 5,
-        title: "IT Support Assistant",
-        company: "Varsity College",
-        yearsActive: "February 2015 - May 2015",
-        information: [
-            "Worked to support the senior support staff with day-to-day tasks.",
-            "Assisted with the evaluation and troubleshooting of hardware and software issues.",
-            "Maintaining computer Inventory & surplus equipment."
-        ],
-    },
-    {
-        id: 6,
-        title: "Student Ambassador",
-        company: "Varsity College",
-        yearsActive: "December 2014 - February 2015",
-        information: [
-            "Monitored registration for all prospective student",
-            "Assisted parents and prospective student with necessary registration details",
+            "Built complete web applications using MongoDB, Express.js, Angular, and Node.js stack, implementing secure authentication and payment processing with JWT and Stripe API.",
+            "Optimized backend API design, improving data retrieval by 35%, and enhanced frontend performance through lazy loading and caching, reducing page load times by 50%.",
+             "Established CI/CD pipelines for automated deployments, while effectively managing project workflows with Git, Jira and Agile methodologies to ensure efficient collaboration."
         ],
     },
 ];

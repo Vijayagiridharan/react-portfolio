@@ -1,28 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Sidebar.css";
-import Logo from "../../assets/logo.svg";
-import LightLogo from "../../assets/light-logo.svg";
+import Logo from "../../assets/vj-logo-dark-navy.svg";
+import LightLogo from "../../assets/vj-logo-light.svg";
 
 import {
-    RiHome2Line,
-    RiUser3Line,
-    RiBriefcase2Line,
-    RiStackLine,
-    RiDraftLine,
-    RiChat3Line,
-    RiFileList3Line,
+    RiHomeLine,
+    RiUserLine,
+    RiSchoolLine,
+    RiCodeBoxLine,
+    RiBriefcaseLine,
+    RiFolderLine,
+    RiMailLine,
     RiMoonLine,
     RiSunLine,
     RiMenu2Line,
 } from "react-icons/ri";
 
-
 const Sidebar = (props) => {
     const [toggle, showMenu] = useState(false);
+    const sidebarRef = useRef(null); // Create a reference for the sidebar
+
+    const closeMenu = () => {
+        showMenu(false);
+    };
+
+    // Close menu when clicking outside the sidebar in mobile view
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (toggle && sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+                closeMenu();
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [toggle]);
 
     return (
         <>
-            <aside className={toggle ? 'aside show-menu' : 'aside'}>
+            {/* Sidebar Wrapper */}
+            <aside ref={sidebarRef} className={toggle ? 'aside show-menu' : 'aside'}>
                 <a href="#home" className="nav__logo">
                     <img src={props.theme === 'light' ? LightLogo : Logo} alt="logo" />
                 </a>
@@ -31,44 +51,44 @@ const Sidebar = (props) => {
                     <div className="nav__menu">
                         <ul className="nav__list">
                             <li className="nav__item">
-                                <a href="#home" className="nav__link">
-                                    <RiHome2Line />
+                                <a href="#home" className="nav__link" onClick={closeMenu}>
+                                    <RiHomeLine />
                                 </a>
                             </li>
 
                             <li className="nav__item">
-                                <a href="#about" className="nav__link">
-                                    <RiUser3Line />
+                                <a href="#about" className="nav__link" onClick={closeMenu}>
+                                    <RiUserLine />
                                 </a>
                             </li>
 
                             <li className="nav__item">
-                                <a href="#services" className="nav__link">
-                                    <RiFileList3Line />
+                                <a href="#education" className="nav__link" onClick={closeMenu}>
+                                    <RiSchoolLine />
                                 </a>
                             </li>
 
                             <li className="nav__item">
-                                <a href="#resume" className="nav__link">
-                                    <RiBriefcase2Line />
+                                <a href="#technologies" className="nav__link" onClick={closeMenu}>
+                                    <RiCodeBoxLine />
                                 </a>
                             </li>
 
                             <li className="nav__item">
-                                <a href="#portfolio" className="nav__link">
-                                    <RiStackLine />
+                                <a href="#experience" className="nav__link" onClick={closeMenu}>
+                                    <RiBriefcaseLine />
                                 </a>
                             </li>
 
                             <li className="nav__item">
-                                <a href="#blog" className="nav__link">
-                                    <RiDraftLine />
+                                <a href="#projects" className="nav__link" onClick={closeMenu}>
+                                    <RiFolderLine />
                                 </a>
                             </li>
 
                             <li className="nav__item">
-                                <a href="#contact" className="nav__link">
-                                    <RiChat3Line />
+                                <a href="#contact" className="nav__link" onClick={closeMenu}>
+                                    <RiMailLine />
                                 </a>
                             </li>
                         </ul>
@@ -76,13 +96,22 @@ const Sidebar = (props) => {
                 </nav>
 
                 <div className="nav__footer">
-                    <button onClick={() => { props.switchTheme(); showMenu(!toggle) }} className="nav__link footer__button">
+                    <button
+                        onClick={() => {
+                            props.switchTheme();
+                        }}
+                        className="nav__link footer__button"
+                    >
                         {props.theme === 'light' ? <RiMoonLine /> : <RiSunLine />}
                     </button>
                 </div>
             </aside>
 
-            <div className={toggle ? 'nav__toggle nav__toggle-open' : 'nav__toggle'} onClick={() => showMenu(!toggle)}>
+            {/* Menu Toggle Button */}
+            <div
+                className={toggle ? 'nav__toggle nav__toggle-open' : 'nav__toggle'}
+                onClick={() => showMenu(!toggle)}
+            >
                 <RiMenu2Line />
             </div>
         </>
